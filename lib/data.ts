@@ -88,6 +88,7 @@ export const projects: Array<{
   metrics: Record<string, string>;
   github: string;
   slug: string;
+  demo?: string;
 }> = [
   {
     id: "fraud-detection",
@@ -98,6 +99,7 @@ export const projects: Array<{
     metrics: { "ROC-AUC": "0.953", "Recall": "70.5%", "Transactions": "100K" },
     github: "https://github.com/mezemir-guchale/fraud-detection",
     slug: "01-fraud-detection",
+    demo: "https://fraud-detection-ml.streamlit.app",
   },
   {
     id: "loan-default",
@@ -108,6 +110,7 @@ export const projects: Array<{
     metrics: { "AUC": "0.756", "Models": "3", "Features": "28" },
     github: "https://github.com/mezemir-guchale/loan-default-prediction",
     slug: "02-loan-default-prediction",
+    demo: "https://loan-default-prediction.streamlit.app",
   },
   {
     id: "stock-dashboard",
@@ -138,6 +141,7 @@ export const projects: Array<{
     metrics: { "NGOs": "20", "KPIs": "7", "Years": "5" },
     github: "https://github.com/mezemir-guchale/ngo-financial-scorecard",
     slug: "05-ngo-financial-scorecard",
+    demo: "https://ngo-financial-scorecard.streamlit.app",
   },
   {
     id: "ifrs-analyzer",
@@ -158,6 +162,7 @@ export const projects: Array<{
     metrics: { "Pairs": "5", "Models": "4", "Best": "EMA" },
     github: "https://github.com/mezemir-guchale/currency-forecasting",
     slug: "07-currency-forecasting",
+    demo: "https://currency-forecasting.streamlit.app",
   },
   {
     id: "credit-risk",
@@ -168,6 +173,7 @@ export const projects: Array<{
     metrics: { "AUC": "0.601", "KS": "0.157", "SHAP": "Yes" },
     github: "https://github.com/mezemir-guchale/credit-risk-scoring",
     slug: "08-credit-risk-scoring",
+    demo: "https://credit-risk-scoring1.streamlit.app",
   },
   {
     id: "aml-monitoring",
@@ -178,6 +184,7 @@ export const projects: Array<{
     metrics: { "Transactions": "200K", "Patterns": "4", "Methods": "3" },
     github: "https://github.com/mezemir-guchale/aml-monitoring",
     slug: "09-aml-monitoring",
+    demo: "https://aml-monitoring.streamlit.app",
   },
   {
     id: "risk-dashboard",
@@ -188,6 +195,7 @@ export const projects: Array<{
     metrics: { "VaR(95%)": "$63M", "Events": "500", "Simulations": "10K" },
     github: "https://github.com/mezemir-guchale/risk-dashboard-capstone",
     slug: "10-risk-dashboard-capstone",
+    demo: "https://risk-dashboard-capstone.streamlit.app",
   },
 ];
 
