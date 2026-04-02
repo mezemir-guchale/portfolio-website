@@ -34,7 +34,7 @@ export default async function BlogPostPage({ params }: PageProps) {
   // Read markdown from blog-posts directory
   let content = "";
   try {
-    const filePath = path.join(process.cwd(), "..", "blog-posts", `${slug}.md`);
+    const filePath = path.join(process.cwd(), "content", `${slug}.md`);
     content = fs.readFileSync(filePath, "utf-8");
   } catch {
     content = `# ${post.title}\n\nBlog post content coming soon.`;
@@ -119,14 +119,26 @@ export default async function BlogPostPage({ params }: PageProps) {
                   </span>
                 ))}
               </div>
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-[#22D3EE] hover:underline"
-              >
-                View on GitHub &rarr;
-              </a>
+              <div className="flex flex-wrap gap-4">
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-[#22D3EE] hover:underline"
+                >
+                  View on GitHub &rarr;
+                </a>
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-[#14B8A6] hover:underline"
+                  >
+                    Live Demo &rarr;
+                  </a>
+                )}
+              </div>
             </div>
           )}
         </div>
